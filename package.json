@@ -1,0 +1,19 @@
+{
+  "name": "scale-nav",
+  "description": "An example of a navigation bar with scale effect",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "author": {
+    "name": "Theo Balick",
+    "email": "balickmethens@gmail.com"
+  }
+}

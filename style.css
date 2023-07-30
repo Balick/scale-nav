@@ -1,0 +1,178 @@
+body, *, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#navigation {
+  color: #000;
+  background-color: #d1d5db;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 10;
+  position: relative;
+}
+
+button {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.2rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+#hidden-element {
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 800ms;
+  overflow: hidden;
+}
+
+#scale-element {
+  width: .2rem;
+  height: .2rem;
+  border-radius: 50%;
+  background-color: rgb(21, 21, 21);
+  display: block;
+  border-radius: 2rem;
+  position: absolute;
+  top: 1.9rem;
+  right: 3rem;
+  transition: all 400ms;
+  z-index: 1;
+}
+
+.scale {
+  transform: scale(1000)!important;
+}
+
+.text-white {
+  color: #fff!important;
+}
+
+button, header {
+  z-index: 6;
+}
+
+button span {
+  width: 2rem;
+  height: .2rem;
+  background-color: #000;
+  display: block;
+  border-radius: 2rem;
+  transition: all 200ms;
+}
+
+button span:first-child {
+  display: none;
+}
+
+.change-bg-line {
+  background-color: #fff!important;
+}
+
+.suppress-line2 {
+  width: 1.5rem;
+}
+
+.reduce-line3 {
+  width: 2.2rem;
+}
+
+nav {
+  position: absolute;
+  width: 100vw;
+  height: 100dvh;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms;
+  z-index: 5
+}
+
+.hidden {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d1d5db;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  transition: all 500ms;
+}
+
+nav ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+
+/* media screen md */
+@media screen and (min-width: 768px) {
+}
+
+/* media screen lg */
+@media screen and (min-width: 1024px) {
+  button {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    position: static;
+    height: auto;
+    width: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li a {
+    color: #000;
+  }
+
+  #hidden-element {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .text-white {
+    color: #000!important;
+  }
+}
+
+/* media screen xl */
+@media screen and (min-width: 1280px) {
+}
