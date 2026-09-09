@@ -2,17 +2,18 @@ body, *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #e99696;
   position: relative;
   overflow-x: hidden;
 }
 
 #navigation {
-  color: #000;
-  background-color: #d1d5db;
+  color: #911010;
+  background-color: #7a8ca7;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +23,7 @@ body {
 }
 
 button {
-  background: transparent;
+  background: blue;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -67,7 +68,7 @@ button {
 }
 
 button, header {
-  z-index: 6;
+  z-index: -1;
 }
 
 button span {
