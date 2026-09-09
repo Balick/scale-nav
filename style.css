@@ -2,18 +2,17 @@ body, *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 body {
-  background-color: #e99696;
+  background-color: #ffffff;
   position: relative;
   overflow-x: hidden;
 }
 
 #navigation {
-  color: #911010;
-  background-color: #7a8ca7;
+  color: #000;
+  background-color: #d1d5db;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +22,7 @@ body {
 }
 
 button {
-  background: blue;
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -68,7 +67,7 @@ button {
 }
 
 button, header {
-  z-index: -1;
+  z-index: 6;
 }
 
 button span {
@@ -156,7 +155,10 @@ nav ul li a:hover {
   nav ul {
     flex-direction: row;
   }
+/* 
+          ------------------*************  la couleur noir a été appliqué au lien qui sont dans des 'li' qui sont à leur tour dans une 'ul' à sont tour aussi est dans la balise 'nav'--------------------*************
 
+*/
   nav ul li a {
     color: #000;
   }
