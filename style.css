@@ -155,7 +155,10 @@ nav ul li a:hover {
   nav ul {
     flex-direction: row;
   }
+/* 
+          ------------------*************  la couleur noir a été appliqué au lien qui sont dans des 'li' qui sont à leur tour dans une 'ul' à sont tour aussi est dans la balise 'nav'--------------------*************
 
+*/
   nav ul li a {
     color: #000;
   }
